@@ -1,0 +1,158 @@
+/* rafting.css */
+
+/* CSS Variables */
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent1-color: #f1faee;
+    --accent2-color: #a8dadc;
+
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/*  Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body*/
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+/*Layout width*/
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 15px;
+}
+
+/* Common Spacing */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hero Heading Overlay */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--accent1-color);
+    color: #fff;
+    /*white text-make sure there is enough contrast with the background-color*/
+}
+
+/* Hero Article Overlay */
+.hero article {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(252, 191, 73, 0.9);
+    color: var(--accent1-color);
+
+}
+
+/* Happy Client Image */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 15px;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 10px gray;
+}
+
+/* History Section */
+section {
+    background-color: var(--accent1-color);
+    margin-top: 20px;
+}
+
+/* Adventure Section */
+.adventure {
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.adventure-gallery img {
+    width: 150px;
+    height: auto;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid var(--secondary-color);
+    padding: 15px;
+
+}
+
+/* Social Media Links */
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    margin-left: 10px;
+}
