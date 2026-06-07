@@ -34,7 +34,7 @@ footer {
 
 header {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 150px 1fr;
     align-items: center;
 }
 
@@ -54,141 +54,146 @@ header nav {
 
 nav {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+    justify-content: flex-end;
+    gap: 15px;
 
-nav a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
-}
+    nav a {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: bold;
+    }
 
-/* Headings */
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    text-align: center;
-    padding: 15px;
+    /* Headings */
+    h1,
+    h2 {
+        font-family: var(--heading-font);
+        color: var(--primary-color);
+        text-align: center;
+        padding: 15px;
 
-}
+    }
 
-/* Common Spacing */
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
+    /* Common Spacing */
+    nav,
+    p,
+    section,
+    article {
+        margin: 16px;
+        padding: 8px;
+    }
 
-/* Hero Section */
-.hero {
-    position: relative;
-    overflow: hidden;
-}
+    /* Hero Section */
+    .hero {
+        position: relative;
+        overflow: hidden;
+    }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+    .hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 
-/* Hero Heading Overlay */
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.9;
-    background-color: var(--accent1-color);
-    color: var(--primary-color);
-    /*white text-make sure there is enough contrast with the background-color*/
-}
+    /* Hero Heading Overlay */
+    .hero h1 {
+        position: absolute;
+        top: 20px;
+        width: 100%;
+        padding: 16px;
+        text-align: center;
+        opacity: 0.9;
+        background-color: var(--accent1-color);
+        color: var(--primary-color);
+        /*white text-make sure there is enough contrast with the background-color*/
+    }
 
-/* Hero Article Overlay */
-.hero article {
-    position: absolute;
-    top: 120px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(241, 250, 238, 0.9);
-    color: var(--primary-color);
-    padding: 1rem;
-}
+    /* Hero Article Overlay */
+    .hero article {
+        position: absolute;
+        top: 120px;
+        left: 20px;
+        right: 20px;
+        background-color: rgba(241, 250, 238, 0.9);
+        color: var(--primary-color);
+        padding: 1rem;
+    }
 
-/* Happy Client Image */
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 15px;
-    border: 2px solid var(--secondary-color);
-    box-shadow: 0 0 10px gray;
-}
+    /* Happy Client Image */
+    .hero article img {
+        float: right;
+        width: 125px;
+        margin-left: 15px;
+        border: 2px solid var(--secondary-color);
+        box-shadow: 0 0 10px gray;
+    }
 
-/* History Section */
-section {
-    background-color: var(--accent1-color);
-    margin-top: 20px;
-}
+    /* History Section */
+    section {
+        background-color: var(--accent1-color);
+        margin-top: 20px;
+    }
 
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    gap: 1rem;
-    align-items: center;
-}
+    .history {
+        display: grid;
+        grid-template-columns: 1fr 200px 1fr;
+        gap: 20px;
+    }
 
-/* Adventure Section */
-.adventure {
-    text-align: center;
-}
+    .history-content {
+        display: grid;
+        grid-template-columns: 1fr 200px 1fr;
+        gap: 1rem;
+        align-items: center;
+    }
 
-.adventure-gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 15px;
-}
+    /* Adventure Section */
+    .adventure {
+        text-align: center;
+    }
 
-.adventure-gallery img {
-    width: 150px;
-    height: auto;
-}
+    .adventure-gallery {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 15px;
+    }
 
-.adventure-gallery figure {
-    text-align: center;
-}
+    .adventure-gallery img {
+        width: 150px;
+        height: auto;
+    }
 
-.adventure {
-    display: grid;
-    text-align: center;
-}
+    .adventure-gallery figure {
+        text-align: center;
+    }
 
-.adventure figure {
-    display: inline-block;
-    margin: 0.5rem;
-}
+    .adventure {
+        display: grid;
+        text-align: center;
+    }
 
-/* Footer */
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-    border-top: 1px solid var(--secondary-color);
-    padding: 15px;
-}
+    .adventure figure {
+        display: inline-block;
+        margin: 0.5rem;
+    }
 
-/* Social Media Links */
-.socialmedia a {
-    text-decoration: none;
-}
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        border-top: 1px solid var(--secondary-color);
+        padding: 15px;
+    }
 
-.socialmedia img {
-    width: 32px;
-    margin-left: 10px;
-}
+    /* Social Media Links */
+    .socialmedia a {
+        text-decoration: none;
+    }
+
+    .socialmedia img {
+        width: 32px;
+        margin-left: 10px;
+    }
